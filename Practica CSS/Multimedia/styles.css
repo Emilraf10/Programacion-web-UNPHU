@@ -1,0 +1,115 @@
+/* Estilos generales de la página (fondo tipo Pokédex) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Título principal estilo Pokémon */
+h1 {
+    text-align: center;
+    color: #ff0000;
+}
+
+/* TABLA - Pokédex con bordes visibles */
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+/* PADDING - Mochila del entrenador (espacio interno) */
+.padding-box {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+
+/* MARGIN - Espacio entre zonas del mapa */
+.margin-box {
+    border: 2px solid blue;
+    margin: 40px;
+    padding: 10px;
+    background-color: #e6f7ff;
+}
+
+/* COLOR - Tipo planta (texto verde) */
+.color-text {
+    color: green;
+}
+
+/* BACKGROUND-COLOR - Ataque eléctrico */
+.bg-color {
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* TEXT-ALIGN - Centro de batalla */
+.text-align {
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+/* FONT-SIZE - Pokémon poderoso (texto grande) */
+.font-size {
+    font-size: 24px;
+}
+
+/* HOVER - Ataques al pasar el mouse */
+.hover1:hover {
+    color: white;
+    background-color: red;
+    font-size: 22px;
+}
+
+.hover2:hover {
+    color: white;
+    background-color: green;
+    font-size: 22px;
+}
+
+/* ACTIVE (CLICK) - Ataques al hacer click */
+.click1:active {
+    color: white;
+    background-color: purple;
+    font-size: 22px;
+}
+
+.click2:active {
+    color: white;
+    background-color: orange;
+    font-size: 22px;
+}
+
+/* LISTA DE POKEMON - Mostrar en fila */
+.pokemon-list {
+    display: flex; 
+    gap: 20px; 
+    list-style: none; 
+    padding: 0;
+}
+
+.pokemon-list li {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.pokemon-list img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 96px;
+    height: 96px;
+}
+
+/* POSITION FIXED - Pantalla flotante tipo Pokédex */
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
+}
