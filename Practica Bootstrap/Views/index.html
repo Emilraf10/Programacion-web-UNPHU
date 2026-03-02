@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Multimedia/styles.css">
+    <link rel="icon" href="https://img.pokemondb.net/sprites/items/poke-ball.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+        <!-- LOGO / TITULO -->
+        <a class="navbar-brand" href="index.html">Pokedex</a>
+
+        <!-- BOTON HAMBURGUESA (COLLAPSE) -->
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- CONTENIDO COLAPSABLE -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="bulbasaur.html">Bulbasaur</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="charmander.html">Charmander</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="squirtle.html">Squirtle</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- CONTENIDO -->
+<div class="container main-container">
+
+    <h1 class="text-center mb-4">Elige tu Pokémon</h1>
+    <button 
+    type="button" 
+    class="btn btn-warning"
+    data-bs-toggle="popover"
+    data-bs-title="Pokédex"
+    data-bs-content="Explora los Pokémon iniciales de Kanto: Bulbasaur, Charmander y Squirtle.">
+    Mostrar información
+    </button>
+
+    <div class="row g-4">
+
+        <!-- Bulbasaur -->
+        <div class="col-md-4">
+            <div class="card pokemon-card text-center">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top pokemon-img">
+                <div class="card-body">
+                    <h5 class="card-title">Bulbasaur</h5>
+                    <a href="bulbasaur.html" class="btn btn-success">Ver más</a>
+                    <button class="btn btn-success" onclick="alert('Bulbasaur seleccionado!')">Seleccionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charmander -->
+        <div class="col-md-4">
+            <div class="card pokemon-card text-center">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" class="card-img-top pokemon-img">
+                <div class="card-body">
+                    <h5 class="card-title">Charmander</h5>
+                    <a href="Charmander.html" class="btn btn-danger">Ver más</a>
+                    <button class="btn btn-danger" onclick="alert('Charmander seleccionado!')">Seleccionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Squirtle -->
+        <div class="col-md-4">
+            <div class="card pokemon-card text-center">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" class="card-img-top pokemon-img">
+                <div class="card-body">
+                    <h5 class="card-title">Squirtle</h5>
+                    <a href="squirtle.html" class="btn btn-primary">Ver más</a>
+                    <button class="btn btn-primary" onclick="alert('Squirtle seleccionado!')">Seleccionar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- IFRAME FIXED -->
+<iframe class="fixed-iframe" src="https://www.youtube.com/embed/MyCvTSjkD74?si=uRBc21ruMFyhs_JV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+
+<!-- Centro pokemon ubicación -->
+<div class="container my-5">
+
+    <div class="card shadow mx-auto" style="max-width: 700px;">
+        
+        <div class="card-body text-center">
+            <h5 class="card-title">Ubicación Pokémon Center</h5>
+
+            <div class="map-container">
+                <iframe width="400px" height="400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8905640671132!2d139.7144535888001!3d35.72890985664363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f044d6725%3A0x5c5c669ed9f5c455!2sPok%C3%A9mon%20Center%20Mega%20Tokyo%20%26%20Pikachu%20Sweets!5e0!3m2!1sen!2sdo!4v1772418454993!5m2!1sen!2sdo"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    popoverTriggerList.forEach(function (popoverTriggerEl) {
+        new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+</body>
+</html>
+
