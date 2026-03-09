@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enlaces Pokemon">
+    <meta name="keywords" content="Noticias, Información, Pokemon, Pokedex">
+    <meta name="author" content="Emil Dirocie">
+    <meta name="robots" content="index, follow">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Multimedia/CSS/Main.css">
+    <link rel="stylesheet" href="../Multimedia/CSS/Navbar.css">
+    <link rel="stylesheet" href="../Multimedia/CSS/Pokemon.css">
+    <link rel="stylesheet" href="../Multimedia/CSS/Iframe.css">
+    <link rel="stylesheet" href="../Multimedia/CSS/efectos.css">
+    <link rel="stylesheet" href="../Multimedia/CSS/footer.css">
+    <link rel="icon" href="https://img.pokemondb.net/sprites/items/poke-ball.png">
+    <title>Enlaces</title>
+</head>
+<body>
+<main>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-danger shadow">
+        <div class="container-fluid">
+
+            <!-- BOTON HAMBURGUESA -->
+            <button class="btn btn-light me-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#pokemonMenu">
+
+            <i class="bi bi-list"></i>
+            </button>
+
+            <!-- LOGO POKEDEX -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" width="40" class="me-2">
+
+            <strong>Pokédex Kanto</strong>
+
+            </a>
+
+            <!-- MENU PRINCIPAL -->
+            <ul class="nav ms-auto">
+
+            <li class="nav-item">
+            <a class="nav-link text-white" href="noticias.html">Noticias</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link text-white" href="enlaces.html">Enlaces</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            
+            <li class="nav-item">
+                <button onclick="modoOscuro()" class="btn btn-dark">Modo oscuro</button>
+            </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Contenido de la hamburguesa -->
+
+    <div class="offcanvas offcanvas-start" id="pokemonMenu">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Pokémon Iniciales</h5>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="bulbasaur.html">🌿 Bulbasaur</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="charmander.html">🔥 Charmander</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="squirtle.html">💧 Squirtle</a>
+                </li>
+                </ul>
+            </div>
+
+    </div>
+
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/rg6CiPI6h2g">
+    </iframe>
+
+        <!-- Centro pokemon ubicación -->
+        <div class="container my-5">
+            <div class="card shadow mx-auto" style="max-width: 700px;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ubicación Pokémon Center</h5>
+                    <div class="map-container">
+                        <iframe width="400px" height="400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8905640671132!2d139.7144535888001!3d35.72890985664363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f044d6725%3A0x5c5c669ed9f5c455!2sPok%C3%A9mon%20Center%20Mega%20Tokyo%20%26%20Pikachu%20Sweets!5e0!3m2!1sen!2sdo!4v1772418454993!5m2!1sen!2sdo"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <button class="btn btn-danger btn-volver-arriba" onclick="volverArriba()">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+</main>
+
+<!-- Footer -->
+
+<footer class="footer-pokedex mt-5 dark-mode">
+
+    <div class="container">
+
+        <div class="row text-center text-md-start align-items-start">
+
+        <!-- LOGO Y DESCRIPCIÓN -->
+        <div class="col-md-4 mb-4">
+
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-2">
+
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" width="35" class="me-2">
+            <h5 class="footer-title m-0">Pokédex Kanto</h5>
+
+            </div>
+
+            <p>
+                Explora información sobre los Pokémon iniciales de Kanto,
+                noticias del mundo Pokémon y contenido multimedia.
+            </p>
+
+        </div>
+
+
+        <!-- ENLACES -->
+        <div class="col-md-4 mb-4">
+
+            <h5 class="footer-title">Enlaces rápidos</h5>
+
+            <ul class="footer-links">
+
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="enlaces.html">Enlaces de interés</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+
+            </ul>
+
+        </div>
+
+
+            <!-- REDES SOCIALES -->
+            <div class="col-md-4 mb-4">
+
+                <h5 class="footer-title">Síguenos</h5>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- COPYRIGHT Y BOTON ARRIBA -->
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 text-center text-md-start footer-copy">
+                © 2026 Pokédex Kanto | Proyecto académico - Emil Dirocie
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../Funcionalidad/App.js"></script>
+</body>
+</html>
