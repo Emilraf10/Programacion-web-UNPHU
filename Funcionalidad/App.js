@@ -10,13 +10,13 @@ window.location.href = pagina;
 
 function mostrarLeafGreen(){
 
-document.getElementById("RFVH-img").src="../Multimedia/IMG/Verde hoja.jpg"
+document.getElementById("RFVH-img").src="Multimedia/IMG/Verde hoja.jpg"
 
 }
 
 function mostrarFireRed(){
 
-document.getElementById("RFVH-img").src="../Multimedia/IMG/Rojo fuego.jpg"
+document.getElementById("RFVH-img").src="Multimedia/IMG/Rojo fuego.jpg"
 
 }
 
