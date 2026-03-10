@@ -1,3 +1,11 @@
+// Tarjetas clickeables
+
+function irAPokemon(pagina){
+
+window.location.href = pagina;
+
+}
+
 // ===== DARK MODE =====
 
 function modoOscuro(){

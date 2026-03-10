@@ -23,6 +23,7 @@
 <body>
 
 <main>
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark bg-danger shadow">
         <div class="container-fluid">
@@ -95,6 +96,26 @@
     </div>
 
     <!-- CONTENIDO -->
+
+    <section class="banner-pokedex text-center text-white d-flex align-items-center">
+
+        <div class="container">
+
+            <h1 class="display-4 fw-bold">Bienvenido a la Pokédex Kanto</h1>
+
+            <p class="lead">
+            Descubre los Pokémon iniciales, explora la región de Kanto y conoce
+            a los entrenadores más famosos del mundo Pokémon.
+            </p>
+
+            <a href="#pokemon-section" class="btn btn-light mt-3">
+            Explorar Pokémon
+            </a>
+
+        </div>
+
+    </section>
+
     <section class="container mt-4">
 
     <div class="row justify-content-center">
@@ -168,7 +189,7 @@
 
             <!-- Bulbasaur -->
             <div class="col-md-4">
-                <div class="card pokemon-card text-center">
+                <div class="card pokemon-card text-center" onclick="irAPokemon('Bulbasaur.html')">
                     <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top pokemon-img">
                     <div class="card-body">
                         <h5 class="card-title">Bulbasaur</h5>
@@ -180,7 +201,7 @@
 
             <!-- Charmander -->
             <div class="col-md-4">
-                <div class="card pokemon-card text-center">
+                <div class="card pokemon-card text-center" onclick="irAPokemon('Charmander.html')">
                     <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" class="card-img-top pokemon-img">
                     <div class="card-body">
                         <h5 class="card-title">Charmander</h5>
@@ -192,7 +213,7 @@
 
             <!-- Squirtle -->
             <div class="col-md-4">
-                <div class="card pokemon-card text-center">
+                <div class="card pokemon-card text-center" onclick="irAPokemon('squirtle.html')">
                     <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" class="card-img-top pokemon-img">
                     <div class="card-body">
                         <h5 class="card-title">Squirtle</h5>

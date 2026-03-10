@@ -22,3 +22,9 @@ body.dark-mode .pokemon-info{
 background-color:#2b3035;
 color:#e4e4e4;
 }
+
+.pokemon-card{
+
+cursor:pointer;
+
+}

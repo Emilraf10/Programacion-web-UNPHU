@@ -46,6 +46,22 @@ main{
 flex: 1;
 }
 
+.banner-pokedex{
+
+height:350px;
+
+background-image:url("https://images.alphacoders.com/118/1183646.jpg");
+background-size:cover;
+background-position:center;
+
+}
+
+.dark-mode .banner-pokedex{
+
+filter:brightness(0.8);
+
+}
+
 /* Separación de contenido */
 .main-container {
     margin-top: 80px;
