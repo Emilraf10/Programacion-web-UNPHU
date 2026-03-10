@@ -92,21 +92,305 @@
             </div>
     </div>
 
-    <div class="card mb-3">
+<!-- Banner -->
 
-        <img src="img/pokemonnews.jpg" class="card-img-top">
+<section class="news-banner text-white text-center d-flex align-items-center">
 
-        <div class="card-body">
-            <h5>Nuevo juego Pokémon</h5>
-            <p>La franquicia Pokémon sigue expandiendo su universo.</p>
+    <!-- <div class="container">
+
+    <h1 class="display-5 fw-bold">Noticias Pokémon</h1>
+
+    <p class="lead">
+    Mantente informado sobre novedades, curiosidades
+    y eventos del mundo Pokémon.
+    </p>
+
+    </div> -->
+
+</section>
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">Noticias destacadas</h2>
+
+    <div class="row g-4">
+
+        <!-- NOTICIA 1 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow h-100">
+
+                <img src="../Multimedia/IMG/Fenomeno.jpg"
+                class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">El fenómeno Pokémon</h5>
+
+                    <p class="card-text">
+                    Desde su lanzamiento en 1996, Pokémon se ha convertido
+                    en una de las franquicias más exitosas del mundo.
+                    </p>
+
+                    <button class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#noticia1">
+
+                    Leer más
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- NOTICIA 2 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow h-100">
+
+                <img src="../Multimedia/IMG/Kanto.png"
+                class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">Región Kanto</h5>
+
+                    <p class="card-text">
+                    Kanto fue la primera región presentada en los juegos
+                    Pokémon Red y Blue. Esta es la primera región en la que vivimos
+                    nuestra aventura
+                    </p>
+
+                    <button class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#noticia2">
+
+                    Leer más
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- NOTICIA 3 -->
+
+        <div class="col-md-4">
+
+            <div class="card shadow h-100">
+
+                <img src="../Multimedia/IMG/Iniciales kanto.jpg"
+                class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">Los Pokémon iniciales</h5>
+
+                    <p class="card-text">
+                    Bulbasaur, Charmander y Squirtle fueron los primeros
+                    Pokémon iniciales disponibles. Representan una elección llena de
+                    nostalgia.
+                    </p>
+
+                    <button class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#noticia3">
+
+                    Leer más
+
+                    </button>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
+
+</div>
+
+<!-- Articulos recientes -->
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">Artículos recientes</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4">
+
+                <h5>La evolución de los videojuegos Pokémon</h5>
+
+                <p>
+                Desde los clásicos juegos de Game Boy hasta los títulos
+                modernos en Nintendo Switch, Pokémon ha evolucionado
+                manteniendo su esencia de exploración y captura.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4">
+
+                <h5>El impacto del anime Pokémon</h5>
+
+                <p>
+                El anime protagonizado por Ash Ketchum ayudó a expandir
+                la popularidad de Pokémon en todo el mundo.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Curiosidades -->
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">Curiosidades Pokémon</h2>
+
+    <div class="card shadow p-4">
+
+        <ol>
+
+            <li>
+            Pikachu fue elegido como mascota oficial de Pokémon.
+            </li>
+
+            <li>
+            El nombre Pokémon proviene de "Pocket Monsters".
+            </li>
+
+            <li>
+            Kanto está inspirado en una región real de Japón.
+            </li>
+
+            <li>
+            Mew fue uno de los Pokémon secretos en los primeros juegos.
+            </li>
+
+            <li>
+            Pokémon es una de las franquicias más lucrativas
+            de la historia.
+            </li>
+
+        </ol>
+
+    </div>
+
+</div>
 
     <button class="btn btn-danger btn-volver-arriba" onclick="volverArriba()">
         <i class="bi bi-arrow-up"></i>
     </button>
 </main>
+
+<!-- Modal noticia 1 -->
+
+<div class="modal fade" id="noticia1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">El fenómeno Pokémon</h5>
+
+                <button class="btn-close"
+                data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                Pokémon comenzó como un videojuego para Game Boy creado
+                por Satoshi Tajiri y desarrollado por Game Freak.
+                </p>
+
+                <p>
+                Con el paso del tiempo se expandió a anime, películas,
+                juegos de cartas y múltiples videojuegos.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal noticia 2 -->
+
+<div class="modal fade" id="noticia2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Región Kanto</h5>
+
+                <button class="btn-close"
+                data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                Kanto es la primera región introducida en Pokémon Red
+                y Blue.
+                </p>
+
+                <p>
+                Incluye ciudades icónicas como Ciudad Plateada,
+                Ciudad Celeste y Ciudad Azafrán.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal noticia 3 -->
+
+<div class="modal fade" id="noticia3">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Los Pokémon iniciales</h5>
+
+                <button class="btn-close"
+                data-bs-dismiss="modal"></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                Los entrenadores de Kanto pueden elegir entre
+                Bulbasaur (tipo planta), Charmander (tipo fuego)
+                y Squirtle (tipo agua).
+                </p>
+
+                <p>
+                Cada uno tiene evoluciones que cambian su tipo
+                y habilidades.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
     <!-- Footer -->
 

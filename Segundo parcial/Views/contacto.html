@@ -93,14 +93,188 @@
 
     </div>
 
-    <h2>Contáctanos</h2>
+    <!-- Banner -->
 
-    <p>Si deseas información sobre Pokémon envíanos un correo.</p>
+    <section class="contact-banner text-center d-flex align-items-center">
 
-    <a class="btn btn-primary"
-    href="mailto:pokedex@email.com">
-    Enviar correo
-    </a>
+        <div class="container">
+
+            <h1 class="display-5 fw-bold">Centro Pokémon</h1>
+
+            <p class="lead">
+            ¿Encontraste un error en la Pokédex o tienes una sugerencia?
+            Nuestro equipo de investigación está listo para ayudarte.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Formulario + informacion de contacto -->
+
+<div class="container mt-5">
+
+    <div class="row g-4">
+
+        <!-- FORMULARIO -->
+
+        <div class="col-md-7">
+
+            <div class="card shadow p-4 contact-card">
+
+                <h3 class="mb-3">Enviar mensaje</h3>
+
+                <form>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre de entrenador">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Correo</label>
+                        <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Motivo de contacto</label>
+
+                    <select class="form-select">
+                    
+                    <option>Consulta general</option>
+                    <option>Reportar error en Pokédex</option>
+                    <option>Sugerencia de contenido</option>
+                    <option>Problema técnico</option>
+                    </select>
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Pokémon favorito</label>
+                    <input type="text" class="form-control" placeholder="Ej: Pikachu">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mensaje</label>
+
+                    <textarea class="form-control" rows="4"
+                    placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <button class="btn btn-danger">
+                <a href="mailto:pokedex@gmail.com" class="mail">Enviar mensaje</a>
+                </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- INFO -->
+
+        <div class="col-md-5">
+
+            <div class="card shadow p-4 contact-card">
+
+                <h4>Centro de soporte</h4>
+
+                <p>
+                El equipo de la Pokédex Kanto responde consultas relacionadas
+                con información de Pokémon, errores en datos o sugerencias
+                para mejorar el sitio.
+                </p>
+
+                <ul class="list-unstyled">
+
+                <li class="mb-2">
+                <i class="bi bi-envelope"></i>
+                soporte@pokedexkanto.com
+                </li>
+
+                <li class="mb-2">
+                <i class="bi bi-geo-alt"></i>
+                Pueblo Paleta, Región Kanto
+                </li>
+
+                <li class="mb-2">
+                <i class="bi bi-clock"></i>
+                Lunes a Viernes — 9:00 a 18:00
+                </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- Preguntas frecuentes -->
+
+<div class="container mt-5">
+
+    <h3 class="text-center mb-4">Preguntas frecuentes</h3>
+
+    <div class="accordion" id="faq">
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+            <button class="accordion-button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq1">
+
+            ¿La Pokédex incluye todos los Pokémon?
+
+            </button>
+            </h2>
+
+            <div id="faq1" class="accordion-collapse collapse show"
+            data-bs-parent="#faq">
+
+                <div class="accordion-body">
+                Actualmente la Pokédex está enfocada en los Pokémon de la
+                región de Kanto.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq2">
+
+            ¿Puedo sugerir nuevos Pokémon o contenido?
+
+            </button>
+            </h2>
+
+            <div id="faq2" class="accordion-collapse collapse"
+            data-bs-parent="#faq">
+
+                <div class="accordion-body">
+                Sí, puedes enviarnos sugerencias utilizando el formulario
+                de contacto.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
     <button class="btn btn-danger btn-volver-arriba" onclick="volverArriba()">
         <i class="bi bi-arrow-up"></i>

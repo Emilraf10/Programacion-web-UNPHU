@@ -99,7 +99,73 @@ filter:brightness(0.8);
     color:white;
 }
 
+/* Noticias */
+
+.news-banner{
+
+height:260px;
+
+background-image:url("../IMG/Noticias.jpg");
+
+background-size:contain;
+background-position:center;
+
+}
+
+body.dark-mode .news-banner{
+
+filter:brightness(0.8);
+
+}
+
+/* Enlaces */
+
+.links-banner{
+color: #121212;
+height:260px;
+
+background-image:url("../IMG/Enlaces.jpg");
+background-size:contain;
+background-position: center;
+
+
+}
+
+body.dark-mode .links-banner{
+
+filter:brightness(0.8);
+
+}
+
+/* Pagina de contacto */
+
+.contact-banner{
+color: #121212;
+height:260px;
+
+background-image:url("../IMG/Centro\ pokemon.jpg");
+
+background-size:contain;
+background-position:center;
+
+}
+
+.mail {
+    text-decoration: none;    /* Quita el subrayado */
+    color: inherit;           /* Hereda el color del padre o el que asignes abajo */
+    display: inline-block;    /* Permite dar dimensiones de botón */
+    cursor: pointer;
+    outline: none;
+}
+
+body.dark-mode .contact-banner{
+
+filter:brightness(0.8);
+
+}
+
 /* botones */
+
 
 .dark-mode .btn{
     border-color:white;
