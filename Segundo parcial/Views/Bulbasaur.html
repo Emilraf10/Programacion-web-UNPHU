@@ -125,7 +125,7 @@
         <br>
 
         <!-- BOTONES -->
-        <button class="btn btn-success" onclick="alert('Bulbasaur elegido!')">Elegir</button>
+        <button class="btn btn-success" onclick="mostrarToast('Bulbasaur', 'success')">Seleccionar</button>
 
         <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalBulbasaur">
             Ver información rápida
@@ -259,6 +259,26 @@
         <i class="bi bi-arrow-up"></i>
     </button>
 </main>
+
+<!-- Alerta dinamica bootstrap -->
+    <div class="toast-container position-fixed top-50 start-50 translate-middle">
+
+        <div id="pokemonToast" class="toast align-items-center text-bg-success border-0">
+
+            <div class="d-flex">
+
+                <div class="toast-body" id="toastMensaje">
+                    Pokémon seleccionado
+                </div>
+
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 <!-- Footer -->
 
 <footer class="footer-pokedex mt-5 dark-mode">

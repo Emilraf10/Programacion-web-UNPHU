@@ -97,6 +97,8 @@
 
     <!-- CONTENIDO -->
 
+    <!-- Banner -->
+
     <section class="banner-pokedex text-center text-white d-flex align-items-center">
 
         <div class="container">
@@ -115,6 +117,8 @@
         </div>
 
     </section>
+
+    <!-- Introduccion -->
 
     <section class="container mt-4">
 
@@ -140,7 +144,7 @@
                         class="btn btn-warning me-2"
                         data-bs-toggle="popover"
                         data-bs-title="Pokédex"
-                        data-bs-content="Explora los Pokémon iniciales de Kanto: Bulbasaur, Charmander y Squirtle.">
+                        data-bs-content="Explora los Pokémon de la región Kanto: Bulbasaur, Charmander y Squirtle.">
                             <i class="bi bi-info-circle"></i> Información
                         </button>
 
@@ -157,44 +161,119 @@
     </div>
 
     </section>
+
+<!-- Modal politica de privacidad -->
+
+<div class="modal fade" id="privacidad">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Política de Privacidad</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>1. Introducción</h6>
+                <p>
+                En esta página web nos comprometemos a proteger la privacidad de nuestros
+                usuarios. Esta política explica cómo recopilamos, utilizamos y protegemos
+                la información que usted pueda proporcionar al utilizar nuestro sitio.
+                </p>
+
+                <h6>2. Información que recopilamos</h6>
+                <p>Podemos recopilar diferentes tipos de información, incluyendo:</p>
+                <ul>
+                    <li>Información proporcionada voluntariamente mediante formularios de contacto.</li>
+                    <li>Datos técnicos como dirección IP, tipo de navegador y sistema operativo.</li>
+                    <li>Información de navegación como páginas visitadas y tiempo de permanencia.</li>
+                </ul>
+
+                <h6>3. Uso de la información</h6>
+                <p>La información recopilada puede utilizarse para:</p>
+                <ul>
+                    <li>Mejorar la experiencia del usuario en el sitio web.</li>
+                    <li>Responder consultas o solicitudes enviadas por los usuarios.</li>
+                    <li>Analizar el tráfico del sitio para mejorar el contenido y funcionalidad.</li>
+                </ul>
+
+                <h6>4. Cookies</h6>
+                <p>
+                Este sitio puede utilizar cookies para mejorar la experiencia de navegación.
+                Las cookies son pequeños archivos almacenados en el dispositivo del usuario
+                que permiten recordar preferencias y analizar el uso del sitio.
+                </p>
+
+                <h6>5. Servicios de terceros</h6>
+                <p>
+                Nuestro sitio puede utilizar servicios externos como plataformas de video
+                o herramientas de análisis que pueden recopilar información de acuerdo
+                con sus propias políticas de privacidad.
+                </p>
+
+                <h6>6. Seguridad de la información</h6>
+                <p>
+                Implementamos medidas de seguridad razonables para proteger la información
+                de los usuarios contra accesos no autorizados, alteraciones o divulgación
+                de datos.
+                </p>
+
+                <h6>7. Derechos del usuario</h6>
+                <p>Los usuarios tienen derecho a:</p>
+                <ul>
+                    <li>Solicitar acceso a los datos personales recopilados.</li>
+                    <li>Solicitar corrección o eliminación de su información.</li>
+                    <li>Retirar su consentimiento para el uso de sus datos.</li>
+                </ul>
+
+                <h6>8. Enlaces externos</h6>
+                <p>
+                Este sitio puede contener enlaces a otros sitios web. No somos responsables
+                de las políticas de privacidad o el contenido de dichos sitios externos.
+                </p>
+
+                <h6>9. Cambios en esta política</h6>
+                <p>
+                Nos reservamos el derecho de actualizar esta política de privacidad en
+                cualquier momento. Se recomienda revisar esta sección periódicamente para
+                estar informado sobre posibles cambios.
+                </p>
+
+                <h6>10. Contacto</h6>
+                <p>
+                Si tiene preguntas sobre esta política de privacidad o sobre el manejo
+                de sus datos, puede contactarnos a través de la sección de contacto
+                de este sitio web.
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                Cerrar
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
     <div class="container main-container" id="pokemon-section">
 
         <h1 class="text-center mb-4">Elige tu Pokémon</h1>
 
-        <div class="modal fade" id="privacidad">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Política de privacidad</h5>
-                        <button class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <p>
-                        Esta página es un proyecto educativo basado en la Pokédex.
-                        No recopilamos información personal de los usuarios.
-                        </p>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cerrar
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Pokemones -->
 
         <div class="row g-4">
 
             <!-- Bulbasaur -->
             <div class="col-md-4">
-                <div class="card pokemon-card text-center" onclick="irAPokemon('Bulbasaur.html')">
+                <div class="card pokemon-card text-center" >
                     <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top pokemon-img">
-                    <div class="card-body">
+                    <div class="card-body" onclick="irAPokemon('Bulbasaur.html')">
                         <h5 class="card-title">Bulbasaur</h5>
                         <a href="bulbasaur.html" class="btn btn-success">Ver más</a>
-                        <button class="btn btn-success" onclick="mostrarToast('Bulbasaur', 'success')">Seleccionar</button>
                     </div>
                 </div>
             </div>
@@ -206,7 +285,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Charmander</h5>
                         <a href="Charmander.html" class="btn btn-danger">Ver más</a>
-                        <button class="btn btn-danger" onclick="mostrarToast('Charmander', 'danger')">Seleccionar</button>
                     </div>
                 </div>
             </div>
@@ -218,7 +296,6 @@
                     <div class="card-body">
                         <h5 class="card-title">Squirtle</h5>
                         <a href="squirtle.html" class="btn btn-primary">Ver más</a>
-                        <button class="btn btn-primary" onclick="mostrarToast('Squirtle', 'primary')">Seleccionar</button>
                     </div>
                 </div>
             </div>
@@ -232,8 +309,10 @@
 
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card shadow pokemon-card">
-                    <img src="https://assets.pokemon.com/assets/cms2/img/video-games/_tiles/pokemon-red/pokemon-red-tile.jpg" class="card-img-top">
+                <div class="card shadow pokemon-card" data-bs-toggle="modal"
+                    data-bs-target="#redModal"
+                    style="cursor:pointer;">
+                    <img src="../Multimedia/IMG/Pokemon rojo.jpg" class="card-img-top">
                     <div class="card-body text-center">
                         <h5>Pokémon Rojo</h5>
                         <p>Uno de los primeros juegos de la saga Pokémon lanzado para Game Boy.</p>
@@ -242,8 +321,10 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card shadow pokemon-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Pok%C3%A9mon_Yellow.png" class="card-img-top">
+                <div class="card shadow pokemon-card" data-bs-toggle="modal"
+                    data-bs-target="#yellowModal"
+                    style="cursor:pointer;">
+                    <img src="../Multimedia/IMG/Pokemon amarillo.jpg" class="card-img-top">
                     <div class="card-body text-center">
                         <h5>Pokémon Amarillo</h5>
                         <p>Versión inspirada en el anime donde Pikachu te acompaña.</p>
@@ -252,10 +333,12 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card shadow pokemon-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Pok%C3%A9mon_FireRed_LeafGreen.png" class="card-img-top">
-                        <div class="card-body text-center">
-                        <h5>FireRed / LeafGreen</h5>
+                <div class="card shadow pokemon-card" data-bs-toggle="modal" data-bs-target="#fireredModal"
+                    style="cursor:pointer;">
+                    <img src="../Multimedia/IMG/Rojo fuego.jpg" id="RFVH-img" class="card-img-top"
+                    onmouseenter="mostrarLeafGreen()" onmouseleave="mostrarFireRed()">
+                    <div class="card-body text-center">
+                        <h5>FireRed/LeafGreen</h5>
                         <p>Remakes modernos de los juegos originales de Kanto.</p>
                     </div>
                 </div>
@@ -269,10 +352,10 @@
         <h2 class="text-center mb-4">Personajes de Kanto</h2>
 
         <div class="row g-4">
-
             <div class="col-md-3">
                 <div class="card shadow pokemon-card">
-                    <img src="https://archives.bulbagarden.net/media/upload/7/7c/Ash_anime.png" class="card-img-top">
+                    <img src="../Multimedia/IMG/Ash.jpg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#ashModal"
+                        style="cursor:pointer;">
                     <div class="card-body text-center">
                         <h5>Ash Ketchum</h5>
                         <p>Entrenador protagonista del anime Pokémon.</p>
@@ -281,8 +364,9 @@
             </div>
 
             <div class="col-md-3">
-                <div class="card shadow pokemon-card">
-                    <img src="https://archives.bulbagarden.net/media/upload/2/2a/Misty_anime.png" class="card-img-top">
+                <div class="card shadow pokemon-card" data-bs-toggle="modal" data-bs-target="#mistyModal"
+                    style="cursor:pointer;">
+                    <img src="../Multimedia/IMG/Misty.jpg" class="card-img-top">
                     <div class="card-body text-center">
                         <h5>Misty</h5>
                         <p>Líder del gimnasio de Ciudad Celeste.</p>
@@ -291,8 +375,9 @@
             </div>
 
             <div class="col-md-3">
-                <div class="card shadow pokemon-card">
-                    <img src="https://archives.bulbagarden.net/media/upload/6/65/Brock_anime.png" class="card-img-top">
+                <div class="card shadow pokemon-card" data-bs-toggle="modal" data-bs-target="#brockModal"
+                    style="cursor:pointer;">
+                    <img src="../Multimedia/IMG/Brock.jpg" class="card-img-top">
                     <div class="card-body text-center">
                         <h5>Brock</h5>
                         <p>Líder del gimnasio de Ciudad Plateada.</p>
@@ -301,21 +386,273 @@
             </div>
 
             <div class="col-md-3">
-                <div class="card shadow pokemon-card">
-                    <img src="https://archives.bulbagarden.net/media/upload/5/59/Professor_Oak_anime.png" class="card-img-top">
+                <div class="card shadow pokemon-card" data-bs-toggle="modal" data-bs-target="#oakModal"
+                    style="cursor:pointer;">
+                    <img src="../Multimedia/IMG/Oak.jpg" class="card-img-top">
                     <div class="card-body text-center">
                         <h5>Profesor Oak</h5>
                         <p>Investigador Pokémon que entrega los iniciales.</p>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section>
 
 </main>
 
+<!-- Modales -->
+
+<!-- Pokemon rojo -->
+
+<div class="modal fade" id="redModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Pokémon Rojo</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="../Multimedia/IMG/Pokemon rojo.jpg" class="img-fluid mb-3">
+
+                <p>
+                Pokémon Rojo fue uno de los primeros juegos de la franquicia. Lanzado para
+                Game Boy, introdujo la región de Kanto, los 151 Pokémon originales y el
+                concepto de capturar, entrenar y combatir Pokémon.
+                </p>
+
+                <ul>
+                <li>Región: Kanto</li>
+                <li>Plataforma: Game Boy</li>
+                <li>Año: 1996</li>
+                </ul>
+
+                <div class="ratio ratio-16x9 mt-3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G1bu5fTMKEs?si=pdhB7e43ERA8GduI" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Pokemon amarillo -->
+
+<div class="modal fade" id="yellowModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pokémon Amarillo</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="../Multimedia/IMG/Pokemon amarillo.jpg" class="img-fluid mb-3">
+
+                <p>
+                Pokémon Amarillo es una versión especial inspirada en el anime.
+                El jugador comienza con Pikachu, que te sigue fuera de su Poké Ball,
+                y aparecen personajes como Jessie y James del Team Rocket.
+                </p>
+
+                <ul>
+                    <li>Región: Kanto</li>
+                    <li>Plataforma: Game Boy</li>
+                    <li>Año: 1998</li>
+                </ul>
+
+                <div class="ratio ratio-16x9 mt-3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aqr_YgqF2vM?si=uxbVFL20-TF4w-V8" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Pokemon RojoFuego y VerdeHoja -->
+
+<div class="modal fade" id="fireredModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Pokémon Rojo Fuego / Verde Hoja</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <img src="../Multimedia/IMG/RF-VH.jpg" class="img-fluid mb-3">
+
+                <p>
+                Pokémon Rojo Fuego y Verde Hoja son remakes de los juegos originales de la
+                región Kanto lanzados para Game Boy Advance. Incluyen mejoras gráficas,
+                compatibilidad con generaciones posteriores y nuevas zonas como las
+                Islas Sete.
+                </p>
+
+                <ul>
+                    <li>Región: Kanto</li>
+                    <li>Plataforma: Game Boy Advance</li>
+                    <li>Año: 2004</li>
+                </ul>
+
+                <div class="ratio ratio-16x9 mt-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1MOjNA7I98g?si=NF7qsrCCpegp0wXT" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ash -->
+
+<div class="modal fade" id="ashModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Ash Ketchum</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+
+                <p>Entrenador de Pueblo Paleta que sueña con convertirse en Maestro Pokémon.</p>
+                <h5>Equipo de Ash</h5>
+
+                <div class="team-grid">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Misty -->
+
+<div class="modal fade" id="mistyModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Misty</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+
+                <p>Líder del gimnasio de Ciudad Celeste especializada en Pokémon tipo agua.</p>
+                <h5>Equipo de Misty</h5>
+
+                <div class="team-grid">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Brock -->
+
+<div class="modal fade" id="brockModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Brock</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+
+                <p>Líder del gimnasio de Ciudad Plateada y experto en Pokémon tipo roca.</p>
+                <h5>Equipo de Brock</h5>
+
+                <div class="team-grid">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Oak -->
+
+<div class="modal fade" id="oakModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Profesor Oak</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+
+                <p>Investigador Pokémon que entrega los iniciales a los entrenadores de Kanto.</p>
+                <h5>Equipo de Prof. Oak</h5>
+
+                <div class="team-grid">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png">
+
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png">
+                    <img class="team-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- IFRAME FIXED -->
 <iframe class="fixed-iframe" src="https://www.youtube.com/embed/GTKq8Kerb0A?si=rgnh5R3zTAQJXR7q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
@@ -323,25 +660,6 @@
 <button class="btn btn-danger btn-volver-arriba" onclick="volverArriba()">
     <i class="bi bi-arrow-up"></i>
 </button>
-
-<!-- Alerta dinamica bootstrap -->
-    <div class="toast-container position-fixed top-50 start-50 translate-middle">
-
-        <div id="pokemonToast" class="toast align-items-center text-bg-success border-0">
-
-            <div class="d-flex">
-
-                <div class="toast-body" id="toastMensaje">
-                    Pokémon seleccionado
-                </div>
-
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-
-            </div>
-
-        </div>
-
-    </div>
 
 <!-- Footer -->
 
@@ -430,6 +748,7 @@
 </script>
 
 <!-- App.js -->
+
 
 <script src="../Funcionalidad/App.js"></script>
 

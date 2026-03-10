@@ -6,6 +6,20 @@ window.location.href = pagina;
 
 }
 
+// Hover rojo fuego y verde hoja
+
+function mostrarLeafGreen(){
+
+document.getElementById("RFVH-img").src="../Multimedia/IMG/Verde hoja.jpg"
+
+}
+
+function mostrarFireRed(){
+
+document.getElementById("RFVH-img").src="../Multimedia/IMG/Rojo fuego.jpg"
+
+}
+
 // ===== DARK MODE =====
 
 function modoOscuro(){

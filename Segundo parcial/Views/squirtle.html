@@ -125,7 +125,7 @@
         <br>
 
         <!-- BOTONES -->
-        <button class="btn btn-primary" onclick="alert('Squirtle elegido!')">Elegir</button>
+        <button class="btn btn-primary" onclick="mostrarToast('Squirtle', 'primary')">Seleccionar</button>
 
         <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#modalSquirtle">
             Ver información rápida
@@ -251,6 +251,25 @@
         </div>
     </div>
 </main>
+
+<!-- Alerta dinamica bootstrap -->
+    <div class="toast-container position-fixed top-50 start-50 translate-middle">
+
+        <div id="pokemonToast" class="toast align-items-center text-bg-success border-0">
+
+            <div class="d-flex">
+
+                <div class="toast-body" id="toastMensaje">
+                    Pokémon seleccionado
+                </div>
+
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 <!-- IFRAME FIXED -->
 <iframe class="fixed-iframe" src="https://www.youtube.com/embed/GTKq8Kerb0A?si=rgnh5R3zTAQJXR7q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>

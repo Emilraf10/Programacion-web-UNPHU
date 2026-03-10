@@ -28,3 +28,19 @@ color:#e4e4e4;
 cursor:pointer;
 
 }
+
+/* Modales personajes */
+
+.team-pokemon{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+justify-items:center;
+margin-top:15px;
+}
