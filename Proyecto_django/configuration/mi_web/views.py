@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
+
+from .forms import ContactoForm
 from .models import Articulo, Noticia
 
 def index(request):
@@ -36,25 +38,34 @@ def contacto(request):
         form = ContactoForm(request.POST)
         if form.is_valid():
             nombre = form.cleaned_data['nombre']
-            email = form.cleaned_data['email']
+            email_usuario = form.cleaned_data['email']
             asunto = form.cleaned_data['asunto']
             mensaje = form.cleaned_data['mensaje']
             
-            # Formatear el correo
-            cuerpo_mensaje = f"Nombre: {nombre}\nEmail: {email}\n\nMensaje:\n{mensaje}"
+            cuerpo_mensaje = f"Has recibido un nuevo mensaje de contacto:\n\n" \
+                             f"Nombre: {nombre}\n" \
+                             f"Email del remitente: {email_usuario}\n" \
+                             f"Asunto: {asunto}\n\n" \
+                             f"Mensaje:\n{mensaje}"
             
             try:
+                # Usamos EMAIL_HOST_USER para autenticar el envío (From)
+                # Usamos DEFAULT_FROM_EMAIL para recibir el correo (To)
                 send_mail(
-                    asunto,
+                    f"Contacto Web: {asunto}",
                     cuerpo_mensaje,
-                    email,
-                    ['starlin2404@gmail.com'], # Recibes los correos aquí
+                    settings.EMAIL_HOST_USER,
+                    [settings.DEFAULT_FROM_EMAIL],
                     fail_silently=False,
                 )
                 messages.success(request, '¡Gracias! Tu mensaje ha sido enviado correctamente.')
                 return redirect('contacto')
             except Exception as e:
-                messages.error(request, 'Hubo un error al enviar el mensaje. Inténtalo de nuevo más tarde.')
+                # Esto imprimirá el error real en tu consola de VS Code/Terminal
+                print(f"--- ERROR DE SMTP ---: {e}")
+                messages.error(request, f'Error al enviar el mensaje. Asegúrate de que tu "Contraseña de Aplicación" de Google sea correcta.')
+        else:
+            messages.error(request, 'Por favor, revisa los datos del formulario.')
     else:
         form = ContactoForm()
         
